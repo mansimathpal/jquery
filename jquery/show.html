@@ -1,0 +1,96 @@
+<Html>
+<head>
+<SCRIPT type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+</SCRIPT>
+<SCRIPT type="text/javascript">
+$(document).ready(function(){
+$('#menu ul').hide();
+ $('#menu li a').mouseenter(function(){
+      $(this).next().slideToggle('slow');
+  }
+);
+});
+</SCRIPT>
+<STYLE type="text/css">
+body{
+background-image:url('background.jpg');
+}
+li a
+{
+display:inline;
+}
+body{
+font-family:Arial,sans-serif;
+font-size:0.9em;
+background-color:silver;
+}
+p
+{
+  line-height:1.5em;
+}
+#menu,ul#menu ul { /*stylizing the menu and the list nested in the menu */
+   list-style-type:none;
+   margin:0;
+   padding:0;
+   width:10em;
+}
+ul#menu a { /*stylizing the <a> elements nested in the menu */
+   display:inline;
+   text-decoration:none;
+}
+ul#menu li { /* stylizing the list items nested in the menu */
+   margin-top:1px;
+}
+ul#menu li a { /* stylizing the <a> elements nested in list items of the menu */
+   background:darkcyan;
+   color:#fff;
+   padding:0.5em;
+}
+ul#menu li a:hover { /* stylizing the <a> elements nested in list items of
+the menu when mouse is placed or moved over them */
+
+   background:black;
+}
+ul#menu li ul li a {
+   background:grey;
+   color:white;
+   padding-left:20px;
+}
+
+ul#menu li ul li a:hover {
+   background:#aaa;
+   color:white;
+   border-left:5px grey solid;
+   padding-left:15px;
+}
+.st
+{
+display:inline;
+}
+</STYLE>
+</head>
+<body>
+<H3>Product Categories </H3>
+<UL ID="menu">
+<LI class=".st"><A>Computers </A>
+<UL>
+    <LI><A href="">e-book Readers </A></LI>
+    <LI><A href="">Tablets and i-Pads </A></LI>
+    <LI><A href="">Laptops </A></LI>
+</UL>
+</LI>
+<LI class=".st"><A>Entertainments</A>
+<UL>
+   <LI><A href="">LED-TVs </A></LI>
+   <LI><A href="">LCD-TVs </A></LI>
+</UL>
+</LI>
+<LI class=".st"><A>Cameras </A>
+<UL>
+   <LI><A href="">Digital Cameras </A></LI>
+   <LI><A href="">Digital SLR Cameras </A></LI>
+</UL>
+</LI>
+</UL>
+</body>
+</Html>

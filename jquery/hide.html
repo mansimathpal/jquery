@@ -1,0 +1,60 @@
+<Html>
+<Head>
+<SCRIPT src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+</SCRIPT>
+<SCRIPT>
+$(document).ready(function(){
+ $(".btn1").click(function(){
+  $("#menu ul").hide();
+ });
+ $(".btn2").click(function(){
+   $("#menu ul").show();
+ });
+});
+</SCRIPT>
+</Head>
+<BODY>
+<P>Product Menu</P>
+<H4>Product Categories </H4>
+<UL ID="menu">
+<LI><A>Laptops </A>
+<UL>
+<LI><A href="">L-150</A></LI>
+<LI><A href="">L-160</A></LI>
+<LI><a href="">L-180</A></LI>
+<LI><A href="">L-260</A></LI>
+<LI><A href="">L-678</A></LI>
+</UL>
+
+</LI>
+<LI><A>Phones</A>
+<LI><A href="">P-1150</A></LI>
+<LI><A href="">P-1260</A></LI>
+<LI><A href="">P-1180</A></LI>
+<LI><A href="">P-2260</A></LI>
+<LI><A href="">P-6708</A></LI>
+</UL>
+</LI>
+<LI><A>Cameras</A>
+<UL>
+<LI><A href="">C-50</A></LI>
+<LI><A href="">C-60</A></LI>
+<LI><A href="">C-80</A></LI>
+<LI><A href="">C-60</A></LI>
+<LI><A href="">C-08</A></LI>
+</UL>
+</LI>
+<LI><A>Music Players</A>
+<UL>
+<LI><A href="">MP-1150</A></LI>
+<LI><A href="">MP-1260</A></LI>
+<LI><A href="">MP-1180</A></LI>
+<LI><A href="">MP-2260</A></LI>
+<LI><A href="">MP-6708</A></LI>
+</UL>
+</LI>
+</UL>
+<button class="btn1">Hide List </button>
+<button class="btn2">Show List </button>
+</BODY>
+</Html>

@@ -1,0 +1,18 @@
+<Html>
+<head>
+<SCRIPT type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+</SCRIPT>
+<script>
+$(document).ready(function(){$("#before1").click(function(){$("p").prepend("My");});});
+$(document).ready(function(){$("#after1").click(function(){$("p").append("Mansi");});});
+$("p").append("appended text");
+</script>
+</head>
+<body>
+
+<p>Name Is</p>
+
+<button id="before1">Prepend Text</button>
+<button id="after1">Append Text</button>
+</body>
+</Html>
